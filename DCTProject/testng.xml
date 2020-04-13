@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DCTProject">
+
+	<listeners>
+		<listener class-name="net.azurewebsites.dct_jackson_qc_cgst.testCases.Listeners" />
+	</listeners>
+
+ 	<test thread-count="5" name="Verifying move DCT">
+ 		<classes>
+ 			<class name="net.azurewebsites.dct_jackson_qc_cgst.testCases.TC_DCT_MoveTest">
+	      		<methods>
+	      			<include name="loginToDCT" />
+			      	<include name="moveByAssessmentFinder" />
+	      		</methods>
+      		</class>
+    	</classes>
+	</test> 
+
+</suite> 
